@@ -1,8 +1,8 @@
 import  express from "express";
 import "dotenv/config"
 import { ApolloServer } from "apollo-server-express";
-//import { resolvers } from "./graphQL_schemas/resolvers.js"
-//import  { typeDefs }  from  "./graphQL_schemas/schema.js"
+import  { resolvers }  from "./graphQL_schema/resolvers.js";
+import   { typeDefs }  from  "./graphQL_schema/schema.js"
 
 //import { PORT } from "../app-config"
 

@@ -10,6 +10,7 @@ price: Number,
 in_Stock:Boolean,
 product_Type:String,
 item_Type:String,
+image:String,
 
 
 
