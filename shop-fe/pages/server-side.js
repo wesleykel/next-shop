@@ -30,6 +30,5 @@ export async function getStaticProps(){
   
       products:data.getAllProducts,
     },
-  };
+  };*/
   }
-  */

@@ -2,8 +2,11 @@
 import Link from "next/link"
 import { gql} from "@apollo/client"
 import client from "../apollo-client"
-import { Title } from '../components/styled.title'
+import { Title } from '../styled_components/styled.title.js'
 import styles from '../styles/Home.module.css'
+import AdminButton from "../components/admin_Button"
+import Login from "../components/login_Button"
+import UserInfo from "../components/user_Info"
 
 
 
@@ -15,11 +18,14 @@ export default function Home({products}) {
   //console.log(products)
   return (
     <div className={styles.container}>
-    
+    <Login/>
+    <AdminButton/>
+    <UserInfo/>
 <Title>Shop</Title>
-<Link href="admin"><a>Admin</a></Link>
-{products.map((item)=>
-<h1>{item.product_Name}</h1>
+
+
+{products.map((item ,index)=>
+<h1 key={index}>{item.product_Name}</h1>
 )}
 
     </div>
