@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 import AdminButton from "../components/admin_Button"
 import Login from "../components/login_Button"
 import UserInfo from "../components/user_Info"
-
+import { useUser } from "@auth0/nextjs-auth0/dist/frontend/use-user"
 
 
 
@@ -15,11 +15,14 @@ import UserInfo from "../components/user_Info"
 
 
 export default function Home({products}) {
-  //console.log(products)
+ 
+
+
+  const {user} =useUser()
   return (
     <div className={styles.container}>
     <Login/>
-    <AdminButton/>
+   {user?<AdminButton/>:null}
     <UserInfo/>
 <Title>Shop</Title>
 
