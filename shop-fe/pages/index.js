@@ -19,6 +19,9 @@ export default function Home({products}) {
 
 
   const {user} =useUser()
+
+
+  
   return (
     <div className={styles.container}>
     <Login/>
