@@ -1,1 +1,10 @@
 # next-shop
+
+[build]
+
+command = "CI= npm run build"
+publish = ".next"
+
+[[plugins]]
+
+package = "@netlify/plugin-nextjs"
