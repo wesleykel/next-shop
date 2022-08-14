@@ -9,7 +9,7 @@ if (request.nextUrl.pathname.startsWith('/admin') && !userCookie) {
 
 
 
-  return(NextResponse.redirect("https://prismatic-boba-8eebaa.netlify.app/"))
+  return(NextResponse.redirect("https://nimble-stroopwafel-1e44e9.netlify.app/"))
 }
 
 
