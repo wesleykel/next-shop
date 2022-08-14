@@ -11,7 +11,7 @@ const Login = () => {
   
     return (
         <div>
-         {!user?<Button onClick={()=>{router.push("/api/auth/login"); Cookies.set("user", "logged-in")}}>Login</Button> :<Button onClick={()=>{router.push("/api/auth/logout"); Cookies.remove("user")}}>Logout</Button>  }
+         {!user?<Button onClick={()=>{router.push("/api/auth/login"); if(!user){Cookies.set("user", "logged-in")}}}>Login</Button> :<Button onClick={()=>{router.push("/api/auth/logout"); Cookies.remove("user")}}>Logout</Button>  }
         </div>
     )
 }
